@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <form id="sign-up" name="signUp">
+
+        <div>
+            <input type="text" name="firstName" required>
+            <label for="firstName">first name</label>
+        </div>
+        <div>
+            <input type="text" name="lastName" required>
+            <label for="lastName">last name</label>
+        </div>
+        <div>
+            <input type="email" id="email" name="email">
+            <label for="email">Enter your email:</label>
+        </div>
+        <div>
+            <input type="password" name="password" required>
+            <label for="password">password</label>
+        </div>
+        <div>
+            <input type="password" name="password" required>
+            <label for="password">confirm password</label>
+        </div>
+        <div>
+            <input type="description" name="description">
+            <label for="description">description</label>
+        </div>
+        <div>
+            <button>send</button>
+        </div>
+
+    </form>
+
+
+
+
+
+
+
+
+
+<script>
+// 1
+    const form = document.getElementById('sign-up');
+    form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+        console.log(document.form.singUp);
+        })
+
+        try{
+
+            if (form.firstName.value.length < 6) {
+                    throw new Error("ERROR")
+                    return
+                }
+                if (form.lsdtName.value.length < 6) {
+                    throw new Error("ERROR")
+                    return
+                }    
+                if (form.description.value.length > 100) {
+                    throw new Error("ERROR")
+                    return
+                }
+                
+
+        }
+
+// 3
+
+let developments = [
+    {
+        "name": "beqa",
+        "lastName": "mirianashvili",
+        "age": 26,
+        "profession": "advokati"
+    },
+
+    {
+        "name": "nino",
+        "lastName": "dvali",
+        "age": 17,
+        "profession": "iuristi",
+    },
+
+    {
+        "name": "giorgi",
+        "lastName": "gagua",
+        "age": 32,
+        "profession": "developeri",
+    },
+    {
+        "name": "lika",
+        "lastName": "buadze",
+        "age": 21,
+        "profession": "eqimi",
+    },
+    {
+        "name": "giorgi",
+        "lastName": "miqeladze",
+        "age": 18,
+        "profession": "finansisti",
+    },
+];
+
+        const result = developers.filter((age) > 18);
+        console.log(developers);
+
+</script>
+
+
+</body>
+</html>
